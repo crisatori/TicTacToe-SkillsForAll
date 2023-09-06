@@ -1,4 +1,4 @@
-board = [["", "", ""], ["", "", ""], ["", "", ""]]
+board = [["x", "o", "x"], ["o", "x", "o"], ["x", "o", "j"]]
 
 
 def display_board(board):
