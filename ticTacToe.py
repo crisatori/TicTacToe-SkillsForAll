@@ -1,13 +1,14 @@
-board = [["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"]]
+board = [["a", "b", "c"], ["d", "e", "f"], ["h", "i", "j"]]
 
 
 def display_board(board):
     for row in board:
-        for cell in range(len(row)):
-            print(" | ", row[cell], end=" ", flush=True)
-            if row[cell] == row[-1]:
+        for cell in enumerate(row):
+            ind = cell[0]
+            ele = cell[1]
+            print(" | ", ele, end=" ", flush=True)
+            if ind == 2:
                 print(" | ")
-                print("")
 
 
 display_board(board)
