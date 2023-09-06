@@ -1,4 +1,4 @@
-board = [["x", "o", "x"], ["o", "x", "o"], ["x", "o", "j"]]
+board = [["", "", ""], ["", "", ""], ["", "", ""]]
 
 
 def display_board(board):
@@ -11,14 +11,14 @@ def display_board(board):
                 print(" | ")
 
 
-def enter_move(board=board):
+def enter_move(token, board: list[str] = board):
     pass
     row = int(input("Type the row number *0 - 2* :"))
     element = int(input("Type element number *0 - 2* :"))
-    board[row][element] = "v"
+    board[row][element] = token
     # The function accepts the board's current status, asks the user about their move,
     # checks the input, and updates the board according to the user's decision.
 
 
-enter_move()
+enter_move(token="u")
 display_board(board)
