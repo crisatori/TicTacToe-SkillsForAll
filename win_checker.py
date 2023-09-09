@@ -9,7 +9,7 @@ def win_checker(board: list) -> bool:
     for i in tokens:
         for j in [r1, r2, r3]:
             if j.count(i) == 3:
-                print("Hay un ganador")
+                print(f"Player {i} won!")
                 return True
     dos, cinco, ocho = [board[2], board[5], board[8]]
     uno, cuatro, siete = [board[1], board[4], board[7]]
@@ -22,7 +22,7 @@ def win_checker(board: list) -> bool:
     for i in tokens:
         for j in [primero, segundo, tercero]:
             if j.count(i) == 3:
-                print("Hay un ganador 2 UJU")
+                print(f"Player {i} won!")
                 return True
 
     cero, cuatro, ocho = [board[0], board[4], board[8]]
@@ -34,7 +34,7 @@ def win_checker(board: list) -> bool:
     for i in tokens:
         for j in [cuarto, quinto]:
             if j.count(i) == 3:
-                print("Hay ganador 3 Yeah")
+                print(f"Player {i} won!")
                 return True
     return False
     # print(f"{board[0:3] = } { board[3:6] = } { board[6:] = } ")
